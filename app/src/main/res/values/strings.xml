@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="search_music_by_genre">search by Genre</string>
+    <string name="search_music_all">search all Music</string>
+    <string name="all_music_explain">description:This activity is for search All music</string>
+    <string name="song_track">description:Track information</string>
+    <string name="dollars">$</string>
+    <string name="buyTrack">Send Song to Basket</string>
+    <string name="genre_activity">description:This Page is for Genre</string>
+    <string name="playTrack">try another Time</string>
+    <string name="submit">submit</string>
+    <string name="total">total price</string>
+    <string name="sending_message">Information sent to your E-MAIL. Please check your E-Mail</string>
+    <string name="song_payment">describtion: This Scree is for pay Mony for musicn</string>
+</resources>
