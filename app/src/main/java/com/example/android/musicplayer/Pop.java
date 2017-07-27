@@ -18,7 +18,6 @@ public class Pop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_music_activity);
 
-
         //Create the list of tracks
         ArrayList<Track> tracks = new ArrayList<Track>();
 

@@ -23,7 +23,6 @@ public class TrackListAdapter extends ArrayAdapter<Track> {
     }
 
     @Override
-
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
@@ -81,7 +80,6 @@ public class TrackListAdapter extends ArrayAdapter<Track> {
         MainListItemIntent.putExtra("trackGenre", trackGenre);
         MainListItemIntent.putExtra("trackTitle", trackTitle);
         MainListItemIntent.putExtra("trackPrice", trackPrice);
-
 
         // Set a click listener on listItemView
         listItemView.setOnClickListener(new View.OnClickListener() {

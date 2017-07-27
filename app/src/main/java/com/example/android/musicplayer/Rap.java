@@ -18,7 +18,6 @@ public class Rap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_music_activity);
 
-
         //Create the list of tracks
         ArrayList<Track> tracks = new ArrayList<Track>();
 
@@ -30,7 +29,6 @@ public class Rap extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list_all_music);
         listView.setAdapter(itemsAdapter);
     }
-
 
     // menu code ///////////////////////////////////////////////////
     @Override

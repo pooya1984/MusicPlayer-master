@@ -29,10 +29,8 @@ public class PaymentActivity extends AppCompatActivity {
             final int trackPrice = b.getInt("trackPrice");
             int trackImage = b.getInt("trackImage");
 
-
             //Set the title of the track
             this.setTitle(trackTitle);
-
 
             //Display the track image
             ImageView albumImageView = (ImageView) findViewById(R.id.track_image);

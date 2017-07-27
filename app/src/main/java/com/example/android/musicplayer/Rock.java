@@ -31,7 +31,6 @@ public class Rock extends AppCompatActivity {
         listView.setAdapter(itemsAdapter);
     }
 
-
     // menu code ///////////////////////////////////////////////////
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
