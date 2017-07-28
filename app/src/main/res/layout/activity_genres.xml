@@ -34,7 +34,6 @@
             android:layout_height="0dp"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:onClick="pop"
             android:text="Pop"
             android:textColor="#FFFF"
             android:textSize="48dp" />
@@ -44,7 +43,6 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:onClick="rock"
             android:text="Rock"
             android:textColor="#FFFF"
             android:textSize="48dp" />
@@ -54,7 +52,6 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:onClick="rap"
             android:text="Rap"
             android:textColor="#FFFF"
             android:textSize="48dp" />

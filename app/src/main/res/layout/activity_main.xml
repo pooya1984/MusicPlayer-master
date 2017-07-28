@@ -26,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
-        android:onClick="openGenresctivity"
         android:padding="10dp"
         android:text="@string/search_music_by_genre" />
 
@@ -38,7 +37,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="16dp"
-        android:onClick="openAllMusicActivity"
         android:padding="16dp"
         android:text="@string/search_music_all" />
 </RelativeLayout>
