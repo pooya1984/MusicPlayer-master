@@ -16,6 +16,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Set a onClickListener  on Search  Music by AllMusic
+        Button local = (Button) findViewById(R.id.button_all_music);
+        local.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(MainActivity.this, AllMusicActivity.class);
+                startActivity(numbersIntent);
+            }
+        });
+        // Set a onClickListener  on Search  Music by Genre
+        Button genres = (Button) findViewById(R.id.button_genre);
+        genres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(MainActivity.this, Genres.class);
+                startActivity(numbersIntent);
+            }
+        });
     }
 
     @Override
@@ -46,31 +65,5 @@ public class MainActivity extends AppCompatActivity {
             default:
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    // Set a onClickListener  on Search  Music by Genre
-    public void openGenresctivity(View view) {
-        Button genres = (Button) findViewById(R.id.button_genre);
-        genres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, Genres.class);
-                startActivity(numbersIntent);
-            }
-
-        });
-    }
-
-    // Set a onClickListener  on Search  Music by AllMusic
-    public void openAllMusicActivity(View view) {
-        Button local = (Button) findViewById(R.id.button_all_music);
-        local.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, AllMusicActivity.class);
-                startActivity(numbersIntent);
-            }
-
-        });
     }
 }

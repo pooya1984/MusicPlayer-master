@@ -16,6 +16,32 @@ public class Genres extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_genres);
+        TextView pop = (TextView) findViewById(R.id.pop);
+        pop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(Genres.this, Pop.class);
+                startActivity(numbersIntent);
+            }
+        });
+
+        TextView rock = (TextView) findViewById(R.id.rock);
+        rock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(Genres.this, Rock.class);
+                startActivity(numbersIntent);
+            }
+        });
+
+        TextView rap = (TextView) findViewById(R.id.rap);
+        rap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(Genres.this, Rap.class);
+                startActivity(numbersIntent);
+            }
+        });
     }
 
     @Override
@@ -46,38 +72,5 @@ public class Genres extends AppCompatActivity {
             default:
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void pop(View view) {
-        TextView pop = (TextView) findViewById(R.id.pop);
-        pop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent numbersIntent = new Intent(Genres.this, Pop.class);
-                startActivity(numbersIntent);
-            }
-        });
-    }
-
-    public void rock(View view) {
-        TextView rock = (TextView) findViewById(R.id.rock);
-        rock.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent numbersIntent = new Intent(Genres.this, Rock.class);
-                startActivity(numbersIntent);
-            }
-        });
-    }
-
-    public void rap(View view) {
-        TextView rap = (TextView) findViewById(R.id.rap);
-        rap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent numbersIntent = new Intent(Genres.this, Rap.class);
-                startActivity(numbersIntent);
-            }
-        });
     }
 }
